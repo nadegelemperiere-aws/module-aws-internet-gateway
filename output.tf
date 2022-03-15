@@ -1,7 +1,7 @@
 # -------------------------------------------------------
 # TECHNOGIX
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
+# Copyright (c) [2022] Technogix SARL
 # All rights reserved
 # -------------------------------------------------------
 # Module to deploy the internet gateway structure

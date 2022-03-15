@@ -1,7 +1,7 @@
 # -------------------------------------------------------
 # TECHNOGIX
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
+# Copyright (c) [2022] Technogix SARL
 # All rights reserved
 # -------------------------------------------------------
 # Module to deploy the internet gateway structure
@@ -14,9 +14,9 @@
 # Create the internet gateway
 # -------------------------------------------------------
 resource "aws_egress_only_internet_gateway" "egress_gateway" {
-  	
+
     count = var.egress_only ? 1 : 0
-	vpc_id = var.vpc
+  	vpc_id = var.vpc
 
   	tags = {
 		Name           	= "${var.project}.${var.environment}.${var.module}.internet"
@@ -29,7 +29,8 @@ resource "aws_egress_only_internet_gateway" "egress_gateway" {
 }
 
 resource "aws_internet_gateway" "gateway" {
-  	
+
+  
     count = var.egress_only ? 0 : 1
 	vpc_id = var.vpc
 
