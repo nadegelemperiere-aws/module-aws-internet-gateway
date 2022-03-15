@@ -16,7 +16,7 @@
 resource "aws_egress_only_internet_gateway" "egress_gateway" {
 
     count = var.egress_only ? 1 : 0
-	vpc_id = var.vpc
+  	vpc_id = var.vpc
 
   	tags = {
 		Name           	= "${var.project}.${var.environment}.${var.module}.internet"
@@ -30,6 +30,7 @@ resource "aws_egress_only_internet_gateway" "egress_gateway" {
 
 resource "aws_internet_gateway" "gateway" {
 
+  
     count = var.egress_only ? 0 : 1
 	vpc_id = var.vpc
 
