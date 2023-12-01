@@ -1,7 +1,5 @@
 # -------------------------------------------------------
-# TECHNOGIX
-# -------------------------------------------------------
-# Copyright (c) [2022] Technogix SARL
+# Copyright (c) [2022] Nadege Lemperiere
 # All rights reserved
 # -------------------------------------------------------
 # Module to deploy the internet gateway structure
@@ -30,7 +28,7 @@ resource "aws_egress_only_internet_gateway" "egress_gateway" {
 
 resource "aws_internet_gateway" "gateway" {
 
-  
+
     count = var.egress_only ? 0 : 1
 	vpc_id = var.vpc
 
