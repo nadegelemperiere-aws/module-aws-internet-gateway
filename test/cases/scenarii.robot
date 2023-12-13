@@ -5,7 +5,7 @@
 # Robotframework test suite for module
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @12 november 2021
-# Latest revision: 30 november 2023
+# Latest revision: 12 december 2023
 # -------------------------------------------------------
 
 
@@ -21,7 +21,6 @@ Library         OperatingSystem
 ${KEEPASS_DATABASE}                 ${vault_database}
 ${KEEPASS_KEY_ENV}                  ${vault_key_env}
 ${KEEPASS_PRINCIPAL_KEY_ENTRY}      /aws/aws-principal-access-key
-${KEEPASS_ID_ENTRY}                 /aws/aws-sso-sysadmin-group-id
 ${REGION}                           eu-west-1
 
 *** Test Cases ***
